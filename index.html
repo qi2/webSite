@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="nocache" content="no-cache">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<title>上网导航</title>
+
+	<link rel="stylesheet" href="assets/css/main.css?v=20150402" />
+	<!-- <link rel="stylesheet" href="assets/css/skinGreen.css?v=20150402" /> -->
+
+</head>
+<body>
+	<!-- <body class="skinGreen"> -->
+
+	<!-- header -->
+	<div class="header">
+		<div class="top oh">
+			<div class="weather" id="weather"></div>
+		</div>
+
+		<div class="searchWrap">
+			<div class="searchNav" id="searchNav">
+				<img src="assets/img/sm.png" alt="" width="35" height="35">
+				<span class="searchArrow"></span>
+			</div>
+			<div class="searchPan dn" id="searchPan">
+				<a href="javascript:;"><img src="assets/img/sm2.png" alt="神马搜索" height="35"></a>
+				<a href="javascript:;"><img src="assets/img/bd2.png" alt="百度搜索" height="35"></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input type="text" name="" value="" class="input" placeholder="搜索" />
+				<a href="javascript:agg.searchBaidu();" class="seaBtn"></a>
+			</div>
+		</div>
+
+		<!-- nav -->
+		<div class="nav">
+			<a href="javascript:;" class="cur">
+				<span class="icon"><i class="i"></i></span>
+				<span class="triangle"></span>
+				首页
+			</a>
+			<a href="javascript:;">
+				<span class="icon"><i class="i"></i></span>
+				<span class="triangle"></span>
+				新闻
+			</a>
+			<a href="javascript:;">
+				<span class="icon"><i class="i"></i></span>
+				<span class="triangle"></span>
+				应用
+			</a>
+		</div>
+		<!-- nav end -->
+	</div>
+	<!-- header end -->
+
+
+
+
+	<div class="nav navFixed dn" id="nav">
+		<a href="javascript:;" class="cur">
+			<span class="icon"></span>
+			<span class="triangle"></span>
+			首页
+		</a>
+		<a href="javascript:;">
+			<span class="icon"></span>
+			<span class="triangle"></span>
+			新闻
+		</a>
+		<a href="javascript:;">
+			<span class="icon"></span>
+			<span class="triangle"></span>
+			应用
+		</a>
+	</div>
+
+
+
+	<!-- 首页page -->
+	<div class="page" id="PageIndex">
+		<ul class="webNav oh">
+			<li><a href="javascript:;">
+				<span class="img"><img src="assets/img/bd.png" alt="" width="100%" height="auto" /></span>
+				<span class="txt">百度</span>
+			</a></li>
+			<script>
+			(function() {
+				for(var i = 0; i < 11; i++) {
+					document.write('<li><a href="javascript:;"><span class="img"><img src="assets/img/bd.png" alt="" width="100%" height="auto" /></span><span class="txt">百度</span></a></li>');
+				}
+			})();
+			</script>
+		</ul>
+
+		<!-- banner -->
+		<div class="slider cur mb10">
+			<div class="swiper-container" id="slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="assets/img/sliderTemp.gif" alt="" width="100%" height="auto" /></div>
+				</div>
+			</div>
+			<div class="sliderPagination pagination"></div>
+		<!-- <a class="arrow-left" href="javascript:;"></a> 
+		<a class="arrow-right" href="javascript:;"></a> -->
+	</div>
+	<!-- banner end -->
+
+
+	<!-- news -->
+	<div class="news mb10 box">
+		<div class="title_1 bob">
+			<a href="javascript:;">今日头条<span class="arrow"></span></a>
+		</div>
+		<div class="con" id="newsHot">
+			<ul class="list_news loading">
+
+			</ul>
+			<a href="javascript:;" class="more" id="newsHotMore">更多新闻<span>></span></a>
+		</div>
+	</div>
+	<!-- news end -->
+
+
+
+
+
+
+
+
+	<!-- 分类导航 -->
+	<div class="" id="weblist"></div>
+	<!-- 分类导航 end -->
+
+
+
+
+
+
+	<!-- market -->
+	<div class="market mb10 box">
+		<div class="title_2">热门游戏和应用</div>
+		<div class="con loading" id="marketList">
+			<!-- <ul class="list_market oh">
+			<li>
+			<a href="javascript:;" class="item">
+			<span class="img"><img src="assets/img/img.png" alt="" width="53" height="53" /></span>
+			<span class="tit">愤怒的小鸟</span>
+			<span class="txt">休闲  44.0M</span>
+			</a>
+			<a href="javascript:;" class="downLoad">下载</a>
+			</li>
+			<script>
+			(function() {
+				for(var i = 0; i < 7; i++) {
+					document.write('<li><a href="javascript:;" class="item"><span class="img"><img src="assets/img/img.png" alt="" width="53" height="53" /></span><span class="tit">愤怒的小鸟</span><span class="txt">休闲  44.0M</span></a><a href="javascript:;" class="downLoad">下载</a></li>');
+				}
+				})();
+				</script>
+				</ul>
+				<a href="javascript:;" class="more">更多游戏和应用<span>></span></a> -->
+			</div>
+
+		</div>
+		<!-- market end -->
+
+
+
+		<!-- 常用工具 -->
+		<div class="life box">
+			<div class="title_2">常用工具</div>
+			<div class="con loading" id="lifeList">
+				<!-- <ul class="list_life oh">
+				<li><a href="javascript:;">
+				<span class="img"><img src="assets/img/life1.png" alt="" width="70%" height="auto" /></span>
+				<span class="txt">火车票火车票火车票火车票</span>
+				</a></li>
+				<script>
+				(function() {
+					for(var i = 2; i < 13; i++) {
+						document.write('<li><a href="javascript:;"><span class="img"><img src="assets/img/life'+i+'.png" alt="" width="70%" height="auto" /></span><span class="txt">火车票</span></a></li>');
+					}
+					})();
+					</script>
+				</ul> -->
+			</div>
+		</div>
+		<!-- 常用工具 end -->
+
+	</div>
+	<!-- 首页page end -->
+
+
+
+	<!-- 新闻page -->
+	<div class="page hide loading" id="PageNews">
+		<ul>
+					<!-- <li>
+					<a href="javascript:;">
+					<span class="img"></span>
+					<span class="tit">title</span>
+					<span class="txt">content</span>
+					<span class="times">1小时前</span>
+					</a>
+				</li> -->
+			</ul>
+			<div class="loadingMore hide">点击加载更多 ></div>
+		</div>
+		<!-- 新闻page end -->
+
+
+
+		<!-- 小说page -->
+		<div class="page hide" id="PageNovel">
+
+		</div>
+		<!-- 小说page end -->
+
+
+		<!-- footer -->
+		<div class="footer tac">
+			上网导航©2015
+		</div>
+		<!-- footer end -->
+		<!-- 上网导航©2015  移卓上网导航©2015-->
+
+		<!-- 
+		<script src="http://ftpagg.18.net/199/action/config.js"></script>
+		<script src="http://ftpagg.18.net/199/assets/js/zepto.min.js"></script>
+		<script src="http://ftpagg.18.net/199/assets/js/idangerous.swiper.min.js"></script>
+		<script src="http://ftpagg.18.net/199/assets/js/main.js"></script>-->
+
+		<script src="action/config.js?v=20150402"></script>
+		<script src="assets/js/zepto.min.js"></script>
+		<script src="assets/js/idangerous.swiper.min.js"></script>
+		<script src="assets/js/main.js?v=20150402"></script>
+
+
+
+<!-- 
+
+添加到 hao.30.net 统计代码：
+//蓝色版
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "//hm.baidu.com/hm.js?8457b58f78b4d30a3086fade182b7e76";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+
+
+添加到 hao.57.net 统计代码：
+//绿色版
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "//hm.baidu.com/hm.js?9d2838cee20bca893cc01a656bc71f44";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+-->
+
+</body>
+</html>

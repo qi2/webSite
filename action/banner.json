@@ -1,0 +1,31 @@
+{
+
+    "n": {
+        "statusText": "广告图",
+        "status": 200,
+        "obj": [
+            {
+                "title": "消灭泡泡,",
+                "advertImgUrl": "http://src.57.net//userfiles/images/spec/2014-11-27/f862d92ccd274283aae06791744f6670.jpg",
+                "apkImgUrl": "http://src.57.net//userfiles/images/2015-01-09/e9b2e30916984b5296a3ede3a2982d12.jpg",
+                "packName": "com.zhuqueok.ppxxl",
+                "advertUrl": ""
+            },
+            {
+                "title": "开心消消乐",
+                "advertImgUrl": "http://src.57.net//userfiles/images/spec/2015-01-13/a777317c196e468a9083414c5ed46a9b.jpg",
+                "apkImgUrl": "http://src.57.net//userfiles/images/2014-12-31/b52a058adb4a4135aca3931a504736d0.jpg",
+                "packName": "com.happyelements.AndroidAnimal",
+                "advertUrl": ""
+            },
+            {
+                "title": "答你妹的题",
+                "advertImgUrl": "http://src.57.net//userfiles/images/spec/2015-01-12/859f6003f7194b65a2d94b59c87961bf.png",
+                "apkImgUrl": "http://src.57.net//userfiles/images/2015-01-13/46afab1596174617b50bb153fd7ed155.png",
+                "packName": "com.dianfeng.dati",
+                "advertUrl": ""
+            }
+        ]
+    }
+
+}
